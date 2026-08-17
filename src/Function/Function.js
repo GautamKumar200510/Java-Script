@@ -16,6 +16,16 @@ function print1to5(){
     }
 }
 
-print1to5();
+// print1to5();
 
 // printname();
+
+
+// Function Argumnent
+
+function printInfo(name, age) {
+    console.log(`${name}'s age is ${age}.`);
+}
+
+printInfo("Gautam", 21);
+printInfo("Brishal", 22);
