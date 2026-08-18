@@ -10,3 +10,6 @@ const cube =(n) => {
 // Implicit return in arrow function
 
 const mul = (a,b) => a*b;
+
+
+
