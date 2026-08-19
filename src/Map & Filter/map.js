@@ -22,8 +22,18 @@
 
 // Filter
 
-let nums = [1,2,3,4,5,6,7,9];
-let ans = nums.filter((el) => {
+// let nums = [1,2,3,4,5,6,7,9];
+// let ans = nums.filter((el) => {
 
-    return el%2 !=0;     // even - trye, odd- false
+//     return el%2 !=0;     // even - trye, odd- false
+// });
+
+
+// Reduce Method
+
+let nums = [1,2,3,4,5,6,7,9];
+let finalVal = nums.reduce((res , el) => {
+    console.log(res);
+    return res +el;
 });
+console.log(finalVal);
