@@ -19,3 +19,11 @@ let nums = [...even , ...odd];
 console.log(nums);
 
 
+// spraed with object literals
+
+const data = {
+    email: "gautam@gmail.com",
+    password: "absj",
+};
+
+const datacopy = {...data, id: 123};
