@@ -7,17 +7,44 @@
 
 // OnMouseEnter
 
+// let btn = document.querySelector("button");
+
+// for(btn of btns){
+//     btn.oneclick = sayHello;
+//     btn.onmouseenter = function () {
+
+//     };
+//     console.log(btn);
+// }
+
+
+// function sayHello(){
+//        alert("Hello!");
+// }
+
+
+
+// EventListener
+
+
 let btn = document.querySelector("button");
 
 for(btn of btns){
-    btn.oneclick = sayHello;
-    btn.onmouseenter = function () {
+    // btn.oneclick = sayHello;
+    //  btn.oneclick = sayName;
 
-    };
-    console.log(btn);
+    btn.addEventListener("click", sayHello);
+     btn.addEventListener("click", sayName);
+  
 }
 
 
 function sayHello(){
        alert("Hello!");
 }
+
+function sayName(){
+       alert("Apna College");
+}
+
+
