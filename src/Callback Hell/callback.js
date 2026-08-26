@@ -35,32 +35,46 @@ changeColor("red", 1000, () => {
 
 // promises
 
-saveToDb(
-    "apna college",
-    () => {
-        console.log("success1 : your data was saved");
+// saveToDb(
+//     "apna college",
+//     () => {
+//         console.log("success1 : your data was saved");
 
-        saveToDb(
-            "hello world",
-            () => {
-                console.log("success2: data2 saved");
+//         saveToDb(
+//             "hello world",
+//             () => {
+//                 console.log("success2: data2 saved");
 
-                saveToDb(
-                    "shradha",
-                    () => {
-                        console.log("success3: data3 saved");
-                    },
-                    () => {
-                        console.log("failure3 : weak connection");
-                    }
-                );
-            },
-            () => {
-                console.log("failure2 : weak connection");
-            }
-        );
-    },
-    () => {
-        console.log("failure1 : weak connection");
-    }
-);
+//                 saveToDb(
+//                     "shradha",
+//                     () => {
+//                         console.log("success3: data3 saved");
+//                     },
+//                     () => {
+//                         console.log("failure3 : weak connection");
+//                     }
+//                 );
+//             },
+//             () => {
+//                 console.log("failure2 : weak connection");
+//             }
+//         );
+//     },
+//     () => {
+//         console.log("failure1 : weak connection");
+//     }
+// );
+
+function saveToDb(data) {
+    return new Promise((resolve, reject) => {
+        let internetSpeed = Math.floor(Math.random() * 10) + 1;
+
+        if (internetSpeed > 4) {
+            resolve("success : data was saved");
+        } else {
+            reject("failure : weak connection");
+        }
+    });
+}
+
+// saveToDb("Gautam Kumar");
